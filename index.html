@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Alyssa S. — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="wrap">
+    <h1>Alyssa S.</h1>
+    <p class="sub">Medieninformatik • Web • UI/UX • Computer Vision</p>
+    <div class="links">
+      <a href="https://github.com/AlyssaSmt" target="_blank" rel="noreferrer">GitHub</a>
+      <a href="#" target="_blank" rel="noreferrer">LinkedIn</a>
+      <a href="mailto:DEINE-EMAIL@domain.de">E-Mail</a>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="card">
+      <h2>Über mich</h2>
+      <p>
+        Ich studiere Medieninformatik und baue Projekte an der Schnittstelle aus
+        Gestaltung und Softwareentwicklung — von Webapps bis hin zu Game-/Simulation-Projekten.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Projekte</h2>
+
+      <div class="grid">
+        <article class="proj">
+          <h3>Godot-kicker (Singleplayer + Multiplayer + Procedural)</h3>
+          <p>Procedural Geometry (Quads), Client/Server Multiplayer, Tools & UI.</p>
+          <div class="pillrow">
+            <span class="pill">Godot 4</span><span class="pill">GDScript</span><span class="pill">Netcode</span>
+          </div>
+          <a class="btn" href="https://github.com/AlyssaSmt/Godot-kicker" target="_blank" rel="noreferrer">Repo ansehen</a>
+        </article>
+
+        <article class="proj">
+          <h3>MyPlants (Webapp)</h3>
+          <p>Pflanzen-Tracker mit Frontend & Backend (Node.js + MongoDB).</p>
+          <div class="pillrow">
+            <span class="pill">HTML/CSS/JS</span><span class="pill">Node.js</span><span class="pill">MongoDB</span>
+          </div>
+          <a class="btn" href="#" target="_blank" rel="noreferrer">Repo ansehen</a>
+        </article>
+
+        <article class="proj">
+          <h3>Bird vs Not-Bird Classifier</h3>
+          <p>Ultralytics YOLO-Classifier, Dataset-Build, Training & Prediction per URL.</p>
+          <div class="pillrow">
+            <span class="pill">Python</span><span class="pill">Ultralytics</span><span class="pill">ML</span>
+          </div>
+          <a class="btn" href="#" target="_blank" rel="noreferrer">Repo ansehen</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Skills</h2>
+      <ul class="skills">
+        <li>Web: HTML, CSS, JavaScript, Node.js</li>
+        <li>Datenbanken: MongoDB, SQLite</li>
+        <li>Game/Simulation: Godot 4, GDScript</li>
+        <li>KI/CV: YOLO/Ultralytics, CLIP/DINO Basics</li>
+        <li>Tools: Git/GitHub, VS Code</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="wrap foot">
+    <small>© <span id="y"></span> Alyssa S.</small>
+  </footer>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
